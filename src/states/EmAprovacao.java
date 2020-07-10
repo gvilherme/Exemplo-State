@@ -2,10 +2,10 @@ package states;
 
 import exceptions.StateChangeNotSupportedException;
 
-public class EmAprovacao implements EstadoDeOrcamento {
+public class EmAprovacao extends EstadoDeOrcamento {
 
 	@Override
-	public double descontoParaOEstado(AceitaTrocaDeEstadoDeOrcamento orcamento) {		
+	protected double descontoParaOEstado(AceitaTrocaDeEstadoDeOrcamento orcamento) {		
 		return orcamento.getValorTotal() * 0.05;
 	}
 

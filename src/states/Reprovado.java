@@ -3,10 +3,10 @@ package states;
 import exceptions.SemDescontoParaOEstadoException;
 import exceptions.StateChangeNotSupportedException;
 
-public class Reprovado implements EstadoDeOrcamento {
+public class Reprovado extends EstadoDeOrcamento {
 
 	@Override
-	public double descontoParaOEstado(AceitaTrocaDeEstadoDeOrcamento orcamento) throws SemDescontoParaOEstadoException {
+	protected double descontoParaOEstado(AceitaTrocaDeEstadoDeOrcamento orcamento) throws SemDescontoParaOEstadoException {
 		throw new SemDescontoParaOEstadoException();
 	}
 

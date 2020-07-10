@@ -28,6 +28,7 @@ public class Main {
 		System.out.println("Valor total depois do desconto de em aprovação: " + orcamento.getValorTotal());
 		orcamento.aprova();
 		orcamento.aplicaDescontoPeloEstado();
+		orcamento.aplicaDescontoPeloEstado();
 		System.out.println("Valor total depois do desconto aprovado: " + orcamento.getValorTotal());
 		orcamento.encerra();
 		orcamento.aplicaDescontoPeloEstado();

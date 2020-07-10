@@ -17,7 +17,7 @@ public abstract class AceitaTrocaDeEstadoDeOrcamento {
 	
 	public void aplicaDescontoPeloEstado() {
 		try {
-			setValorDepoisDoDescontoPeloEstado(estado.descontoParaOEstado(this));
+			setValorDepoisDoDescontoPeloEstado(estado.obtemDesconto(this));
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}		
