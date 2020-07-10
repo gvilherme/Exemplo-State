@@ -1,5 +1,5 @@
-package ImpostoStrategy;
-import Entities.Orcamento;
+package impostoStrategy;
+import entities.Orcamento;
 
 public class CalculadoraDeImpostos {
 	

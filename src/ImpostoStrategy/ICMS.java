@@ -1,6 +1,6 @@
-package ImpostoStrategy;
+package impostoStrategy;
 
-import Entities.Orcamento;
+import entities.Orcamento;
 
 public class ICMS extends Imposto {
 
